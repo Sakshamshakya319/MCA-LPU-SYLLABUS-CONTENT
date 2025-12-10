@@ -1,0 +1,6 @@
+Questions:-
+why are we mounting the disc-why we select disc3
+disc1- contains 3 packages of samba server
+disc3- contains only 1 package-samba swat
+show the installtion of the samba server , going to the services
+page(complete intallation)

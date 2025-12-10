@@ -1,0 +1,72 @@
+LINUX COMMANDS
+ 
+1) To switch to root user- su -
+2) To switch from root to user just type the command- exit
+3) To see in which directory type command- pwd
+4) To make directory type command- mkdir (class name)
+5) To remove the files created type command- rmdir/rm (class name)
+6) To move type command- mv
+7) To clear the terminal type command- clear
+8) To get disk details type command by going to root- fdisk -l
+9) To change directory type command- cd (name)
+10)To create file type command- touch filename.txt(text file)
+11)To write something on the newly created file type command- cat> filename.txt
+12)To save the newly created file type command-ctrl+d
+13)To view the newly created file type command- cat filename.txt
+14)To delete the newly created file type command-rm filename.txt
+15)Example with vi editor:
+   Open file-vi.filename.txt
+   Press i- to go into insert mode, type your text you want to type
+   Press Esc- to leave insert mode
+   Type command- :wq to save and exit(if you want to quit without saving:ql)
+16)To create partition go to root and type command- fdisk /dev/sdb
+   [command/help]:n
+   Then p and select start no. and end end no. 
+   Then [command/help]:w
+17)To delete a specific partition, type command- fdisk /dev/sdb
+   [command/help]:d
+   Partition number(1-4):1
+   [command/help]:w
+18)Mount(to enter/access into the partition) using mount pointer
+   To create a folder- mkdir /mnt/<directory name>
+   To mount- mount -t ext3/dev/sdb1/mnt/<directory name>
+   To enter into mount- cd /mnt/<directory name>
+   To view mount- df -h
+   Mount Point-it is a directory with which we can access a specific partition
+19)Swap(to create swapspace)type the commands:
+   dd if=/dev/zero of=/<swapfile> bs=1MB count=1024
+   1024+0 records in 
+   1024+0 records out
+   [root@localhost root]# chmod 600 /<swapfile>
+   [root@localhost root]# mkswap /<swapfile>
+   Settin up swapspace version 1, size=1023995 kb
+   [root@localhost root]# swapon /<swapfile>
+   [root@localhost root]# free -m(to see the size of swapspace created in mb)
+   [root@localhost root]# free(to see the size of swapspace created in kb)
+   [root@localhost root]# free -g(to see the size of swapspace created in gb)
+20)Copy and move file
+   To copy-cp source_file_name destination_file_name;eg:- cp first.txt second.txt
+   To move/change name-mv source_file_name destination_file_name;eg:- mv first.txt second.txt
+21)To view disk usage- du -h
+22)To allow users to view and manage running processes:-
+   To view Process Status- ps
+   To kill Process- kill
+   To view system processes- top
+23)To add users- go to root and type command:- sudo adduser <newuser>
+   To give password to the newly created user type command:- sudo passwd <newuser>
+   Then give the password to the <newuser>
+24)To see the permissions type command- ls -l	
+   Make the file executable type command- chmod +x filename
+   To change the umask of all the users,group,others type command- umask 000(with different numbers)
+25)To create a new file instantly type command- echo "passage/text">filename.txt
+   To archive the files type command- tar -cvf name.tar file1 file2 file3(eg- tar -cvf zip.tar gul2 gul3.txt)
+   To compress the file type command- gzip file.tar
+   To see the contents of compressed archive type command- tar -tvzf file.tar.gz
+   To extract back type command- tar -xvzf file.tar.gz
+26)Awk command used to see the contents in a file type command- awk '{print$0}' filename.txt(prints all the contents)
+   awk '{print$1}' filename.txt(prints the first column)
+   To view multiple columns type command- awk '{print"Name",$1,"City",$3}' data.txt(prints the name and the city column)
+27)To sort the data/records type command- sort filename.txt
+   To sort in descending order type command- sort -r filename.txt(the changes are not permanent)
+   To save the sorted data create a new file as- sort filename.txt>newfilename.txt  
+
