@@ -1,0 +1,21 @@
+Task 1: Online Retail Transaction System- An e-commerce company needs to manage customers, orders, products, and payments.
+
+Tasks:
+Create SQL tables with primary key and 2 constraints.
+Implement RIGHT and LEFT to generate reports.
+Create a view for monthly sales summary
+Use transaction control (COMMIT, ROLLBACK, SAVEPOINT).
+
+
+Task 2: Employee Payroll Automation- An organization requires automation for salary processing and reporting.
+Tasks:
+Create PL/SQL procedures for salary calculation
+Implement cursors to process multiple employee records
+Design a trigger to log salary updates
+
+
+Task 3: A company experiences slow query performance on large datasets.
+Tasks:
+Write nested and subqueries for reporting
+Use built-in numeric and character functions
+Optimize queries using views

@@ -1,0 +1,3 @@
+--Factorial using functions while loop and for loop. with stored procedure in it.
+
+--student record whose marks are more then 50 then give them 10 marks as bonus.
